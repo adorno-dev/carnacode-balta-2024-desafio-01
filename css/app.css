@@ -28,6 +28,21 @@ form {
     /* height: 100%; */
 }
 
+@media screen and (max-width: 450px) {
+    form.full {
+        
+        max-width: 100dvw;
+        max-height: 100dvh;
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 812px) {
+    form.full {
+        min-height: 812px;
+    }
+}
+
 form h2 {
     text-align: center;
     margin: 20px 0;
@@ -125,6 +140,10 @@ ul li span {
     font-size: 14px;
 }
 
+.full {
+    height: 100dvh !important;
+}
+
 .hint {
     margin: 0 auto;
     text-align: center;
@@ -134,10 +153,6 @@ ul li span {
 
 .icon {
     margin: 0 auto !important;
-}
-
-.h100 {
-    height: 100%;
 }
 
 .splash {
